@@ -1,4 +1,4 @@
-Machine Learning on a Used Car Market
+# H1 Machine Learning on a Used Car Market
 Problem
 Shopping for a used vehicle is quite tricky, because there are following questions: Is this price reasonable? or  Why is this car seem cheaper or more expensive? This question is often difficult to answer due to the fact that it's hard to keep track of all the vehicles of interest currently available on the market.
 2. Solution
