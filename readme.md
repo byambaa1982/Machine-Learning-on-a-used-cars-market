@@ -10,7 +10,7 @@ This project is to build a model that determines if the asking price for a parti
 Data source obtaining method:
 + http://www.cars.com , scrape using Selenium
 + https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVINValuesBatch/ scrape using API
-+ <Fueleconomy.gov> download csv format
++ [Fueleconomy.gov] download csv format
 
 ### The data  limitations:
 
@@ -22,7 +22,7 @@ After obtaining and filtering the data, the final dataset contains:
 54 Makes
 485 Models
 34 unique years
-### Feature Selection
+### 4. Feature Selection
 My target is price. For feature selection, I did three different approach. 
 + Combination of numerical (year, mileage, price ), categorical(drivetrain, fuel type, transmission, make, model) and text extraction using NLP. 
 + Combination of numerical (year, mileage, price ), categorical(drivetrain, fuel type, transmission, make, model) and built_feature(popular cars).
@@ -37,7 +37,7 @@ My target is price. For feature selection, I did three different approach.
 ### Figure 3.3 Price Distribution  over all listing.
 
 
-### 4. Modeling
+### 5. Modeling
 
 The cleaned data set was divided into training and test subsets--the training set is 66%, and the test set is 33%. 
 RandomForest regressor was used to predict price of cars. Other modeling techniques, such as xgboost forest, produced similar accuracy scores, but over-predicted renewal. Randomforest model accuracy was 0.86 on the training set and 0.72 on the test set.
