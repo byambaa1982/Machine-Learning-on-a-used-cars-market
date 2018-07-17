@@ -10,7 +10,7 @@ This project is to build a model that determines if the asking price for a parti
 Data source obtaining method:
 + http://www.cars.com , scrape using Selenium
 + https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVINValuesBatch/ scrape using API
-+ [Fueleconomy.gov] download csv format
++ https://Fueleconomy.gov download csv format
 
 ### The data  limitations:
 
@@ -30,7 +30,7 @@ My target is price. For feature selection, I did three different approach.
 ### Exploratory Data Analysis 
 ### Figure 3.1 Number of Listings Per Model Y. Most of the listing are contained in model years 2015 and  2016.
 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![alt text](/Users/enkhbat/notebooks/car_prediction/images/exotic_reg "Logo Title Text 1")
 
 ### Figure 3.2 Price Distribution per Model Year. This plot is limited to a maximum price of $150,000. As expected, there is a general trend of prices increasing as the age of the vehicles decreases. However, there is a wide spread of prices within each year.
 
@@ -43,7 +43,8 @@ The cleaned data set was divided into training and test subsets--the training se
 RandomForest regressor was used to predict price of cars. Other modeling techniques, such as xgboost forest, produced similar accuracy scores, but over-predicted renewal. Randomforest model accuracy was 0.86 on the training set and 0.72 on the test set.
 
 ### Conclusion
-My scraped data was very dirty and missing many entries, especially, exterior color, interior color, “plantcountry”. I had to drop them, even those are very important features.  While the details provided in the downloaded listings are quite comprehensive, I was only able to include a small number of the features. And some features, especially text_blobs, were very unreliable. Many of the them had multiple variations of the same name, or different names to same meaning  'radio!, fm/am radio, radio!!!'. I was not able to develop code capable of cleaning up the discrepancies between the various names, and I suspect this had a negative impact on both the regression and recommendation calculations.
++ My scraped data was very dirty and missing many entries, especially, exterior color, interior color, plant country. I had to drop them off, even those are very important features.  While the details provided in the downloaded listings are quite comprehensive, I was only able to include a small number of the features. And some features, especially text_blobs, were very unreliable. Many of the them had multiple variations of the same name, or different names to same meaning  'radio!, fm/am radio, radio!!!'. I was not able to develop code capable of cleaning up the discrepancies between the various names, and I suspect this had a negative impact on the regression. 
++ My model shows different regression on expensive cars (i.e. more than $150000), because exotic cars have very different features, various interest and very different from one another. 
 ### Future Steps
 According to the paper “Invest in Information or Wing It? A Model of Dynamic Pricing with Seller Learning”, the distribution of the initial prices and the total price changes due to the adjustments of the seller’s belief is very important feature. If I would scrape Carmax.com instead cars.com, i would obtain those kind of information, because they have listing duration by days. 
 
