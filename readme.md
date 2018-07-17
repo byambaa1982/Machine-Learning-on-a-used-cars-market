@@ -22,7 +22,9 @@ After obtaining and filtering the data, the final dataset contains:
 54 Makes
 485 Models
 34 unique years
+
 ### 4. Feature Selection
+
 My target is price. For feature selection, I did three different approach. 
 + Combination of numerical (year, mileage, price ), categorical(drivetrain, fuel type, transmission, make, model) and text extraction using NLP. 
 + Combination of numerical (year, mileage, price ), categorical(drivetrain, fuel type, transmission, make, model) and built_feature(popular cars).
@@ -40,12 +42,15 @@ My target is price. For feature selection, I did three different approach.
 ### 5. Modeling
 
 The cleaned data set was divided into training and test subsets--the training set is 66%, and the test set is 33%. 
-RandomForest regressor was used to predict price of cars. Other modeling techniques, such as xgboost forest, produced similar accuracy scores, but over-predicted renewal. Randomforest model accuracy was 0.86 on the training set and 0.72 on the test set.
+Several regressors were used to predict price of cars. XG boost is my superior model. It's model accuracy was 0.89 on the training set and 0.81 on the test set.
 
 ### Conclusion
 + My scraped data was very dirty and missing many entries, especially, exterior color, interior color, plant country. I had to drop them off, even those are very important features.  While the details provided in the downloaded listings are quite comprehensive, I was only able to include a small number of the features. And some features, especially text_blobs, were very unreliable. Many of the them had multiple variations of the same name, or different names to same meaning  'radio!, fm/am radio, radio!!!'. I was not able to develop code capable of cleaning up the discrepancies between the various names, and I suspect this had a negative impact on the regression. 
 + My model shows different regression on expensive cars (i.e. more than $150000), because exotic cars have very different features, various interest and very different from one another. 
-### Future Steps
-According to the paper “Invest in Information or Wing It? A Model of Dynamic Pricing with Seller Learning”, the distribution of the initial prices and the total price changes due to the adjustments of the seller’s belief is very important feature. If I would scrape Carmax.com instead cars.com, i would obtain those kind of information, because they have listing duration by days. 
 
+### Future Steps
+
++ Obtaining data and cleaning it took most of my time complete this project. I will collect more data and put it in public (i.e kaggle dataset) after some EDA to help fellow data scientists. 
++ According to the paper “Invest in Information or Wing It? A Model of Dynamic Pricing with Seller Learning”, the distribution of the initial prices and the total price changes due to the adjustments of the seller’s belief is very important feature. If I would scrape Carmax.com instead cars.com, i would obtain those kind of information, because they have listing duration by days. 
++ Finish my recomendation engine. 
 
