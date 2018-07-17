@@ -7,7 +7,7 @@ Shopping for a used vehicle is quite tricky, because there are following questio
 This project is to build a model that determines if the asking price for a particular car is reasonable given the information provided in the listing. 
 
 ### 3. Data Collection and Cleaning
-Data source obtaining method:
+Data source and obtaining method:
 + http://www.cars.com , scrape using Selenium
 + https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVINValuesBatch/ scrape using API
 + https://Fueleconomy.gov download csv format
@@ -32,7 +32,7 @@ My target is price. For feature selection, I did three different approach.
 ### Exploratory Data Analysis 
 ### Figure 3.1 Number of Listings Per Model Y. Most of the listing are contained in model years 2015 and  2016.
 
-![alt text](/Users/enkhbat/notebooks/car_prediction/images/exotic_reg "Logo Title Text 1")
+![alt text](/Users/enkhbat/notebooks/car_prediction/Mashine-Learning-on-a-used-cars-market/images "Logo Title Text 1")
 
 ### Figure 3.2 Price Distribution per Model Year. This plot is limited to a maximum price of $150,000. As expected, there is a general trend of prices increasing as the age of the vehicles decreases. However, there is a wide spread of prices within each year.
 
