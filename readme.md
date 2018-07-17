@@ -9,7 +9,7 @@ This project is to build a model that determines if the asking price for a parti
 ### 3. Data Collection and Cleaning
 Data source and obtaining method:
 + http://www.cars.com , scrape using Selenium
-+ https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVINValuesBatch/ scrape using API
++ https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVINValuesBatch/ accessing API
 + https://Fueleconomy.gov download csv format
 
 ### The data  limitations:
@@ -30,15 +30,15 @@ My target is price. For feature selection, I did three different approach.
 + Combination of numerical (year, mileage, price ), categorical(drivetrain, fuel type, transmission, make, model) and built_feature(popular cars).
 + Combination of numerical (year, mileage, price ), categorical(drivetrain, fuel type, transmission, make, model),  built_feature(popular cars) and keywords_feature(navigation, audio, camera, etc)
 ### Exploratory Data Analysis 
-### Figure 3.1 Number of Listings Per Model Y. Most of the listing are contained in model years 2015 and  2016.
+### Figure 4.1 Number of Listings Per Model Y. Most of the listing are contained in model years 2015 and  2016.
 
 ![alt text](/images/num_list "Logo Title Text 1")
 
-### Figure 3.2 Price Distribution per Model Year. This plot is limited to a maximum price of $150,000. As expected, there is a general trend of prices increasing as the age of the vehicles decreases. However, there is a wide spread of prices within each year.
+### Figure 4.2 Price Distribution per Model Year. This plot is limited to a maximum price of $150,000. As expected, there is a general trend of prices increasing as the age of the vehicles decreases. However, there is a wide spread of prices within each year.
 
 ![alt text](/images/price_dist_pmy "Logo Title Text 1")
 
-### Figure 3.3 Mile Distribution  over all listing.
+### Figure 4.3 Mile Distribution  over all listing.
 
 ![alt text](/images/dist_mile_pmy "Logo Title Text 1")
 
@@ -48,11 +48,11 @@ My target is price. For feature selection, I did three different approach.
 The cleaned data set was divided into training and test subsets--the training set is 66%, and the test set is 33%. 
 Several regressors were used to predict price of cars. XG boost is my superior model. It's model accuracy was 0.89 on the training set and 0.81 on the test set.
 
-### Figure 3.4 My result!!!.
+### Figure 5.1 My result!!!.
 
 ![alt text](/images/result "Logo Title Text 1")
 
-### Figure 3.5 My result in general!.
+### Figure 5.2 My result in general!.
 
 ![alt text](/images/with_exotic "Logo Title Text 1")
 
