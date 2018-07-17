@@ -32,11 +32,15 @@ My target is price. For feature selection, I did three different approach.
 ### Exploratory Data Analysis 
 ### Figure 3.1 Number of Listings Per Model Y. Most of the listing are contained in model years 2015 and  2016.
 
-![alt text](/images/exotic_reg "Logo Title Text 1")
+![alt text](/images/num_list "Logo Title Text 1")
 
 ### Figure 3.2 Price Distribution per Model Year. This plot is limited to a maximum price of $150,000. As expected, there is a general trend of prices increasing as the age of the vehicles decreases. However, there is a wide spread of prices within each year.
 
-### Figure 3.3 Price Distribution  over all listing.
+![alt text](/images/price_dist_pmy "Logo Title Text 1")
+
+### Figure 3.3 Mile Distribution  over all listing.
+
+![alt text](/images/dist_mile_pmy "Logo Title Text 1")
 
 
 ### 5. Modeling
@@ -44,9 +48,17 @@ My target is price. For feature selection, I did three different approach.
 The cleaned data set was divided into training and test subsets--the training set is 66%, and the test set is 33%. 
 Several regressors were used to predict price of cars. XG boost is my superior model. It's model accuracy was 0.89 on the training set and 0.81 on the test set.
 
+### Figure 3.4 My result!!!.
+
+![alt text](/images/result "Logo Title Text 1")
+
+### Figure 3.5 My result in general!.
+
+![alt text](/images/with_exotic "Logo Title Text 1")
+
 ### Conclusion
 + My scraped data was very dirty and missing many entries, especially, exterior color, interior color, plant country. I had to drop them off, even those are very important features.  While the details provided in the downloaded listings are quite comprehensive, I was only able to include a small number of the features. And some features, especially text_blobs, were very unreliable. Many of the them had multiple variations of the same name, or different names to same meaning  'radio!, fm/am radio, radio!!!'. I was not able to develop code capable of cleaning up the discrepancies between the various names, and I suspect this had a negative impact on the regression. 
-+ My model shows different regression on expensive cars (i.e. more than $150000), because exotic cars have very different features, various interest and very different from one another. 
++ My model shows different regression (Fig 3.5) on expensive cars (i.e. more than $150000), because exotic cars have very different features, various interest and very different from one another. 
 
 ### Future Steps
 
