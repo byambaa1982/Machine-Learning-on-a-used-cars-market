@@ -16,14 +16,14 @@ Data source and obtaining method:
 
 ### Data  limitations:
 
-+1. Only looked at used cars. According to Ward’s Automotive Yearbook 2013, about 42 million used cars ($380 billion in total revenues) were sold in the U.S. in 2012. By comparison, about 15 million new cars ($300 billion in total revenue) were sold in the U.S. in the same year.
-+2. Vehicles located within 75 miles of Chicago, IL, because of local consumers’ preferences.
++ 1. Only looked at used cars. According to Ward’s Automotive Yearbook 2013, about 42 million used cars ($380 billion in total revenues) were sold in the U.S. in 2012. By comparison, about 15 million new cars ($300 billion in total revenue) were sold in the U.S. in the same year.
++ 2. Vehicles located within 75 miles of Chicago, IL, because of local consumers’ preferences.
 Minimum aksing price of $5,000.
 After obtaining and filtering the data, the final dataset contained:
-+4,235 unique listings
-+54 makes
-+485 models
-+34 unique years
++ 4,235 unique listings
++ 54 makes
++ 485 models
++ 34 unique years
 
 ### 4. Feature Selection
 
