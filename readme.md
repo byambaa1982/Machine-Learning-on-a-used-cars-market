@@ -16,8 +16,8 @@ Data source and obtaining method:
 
 ### Data  limitations:
 
-+ 1. Only looked at used cars. According to Ward’s Automotive Yearbook 2013, about 42 million used cars ($380 billion in total revenues) were sold in the U.S. in 2012. By comparison, about 15 million new cars ($300 billion in total revenue) were sold in the U.S. in the same year.
-+ 2. Vehicles located within 75 miles of Chicago, IL, because of local consumers’ preferences.
++ Only looked at used cars. According to Ward’s Automotive Yearbook 2013, about 42 million used cars ($380 billion in total revenues) were sold in the U.S. in 2012. By comparison, about 15 million new cars ($300 billion in total revenue) were sold in the U.S. in the same year.
++ Vehicles located within 75 miles of Chicago, IL, because of local consumers’ preferences.
 Minimum aksing price of $5,000.
 After obtaining and filtering the data, the final dataset contained:
 + 4,235 unique listings
@@ -67,6 +67,6 @@ Several regressors were used to predict the price of cars. XG Boost was the supe
 ### Future Steps
 
 + Obtaining data and cleaning it took most of my time in completing this project. I will collect more data and make it publicly available (i.e kaggle dataset) after some EDA to help fellow data scientists. 
-+ According to the paper “Invest in Information or Wing It? A Model of Dynamic Pricing with Seller Learning”, the distribution of the initial prices and the total price changes due to the adjustments of the seller’s belief is a very important feature. If I had scraped Carmax.com instead Cars.com, i would have obtained this kind of information, because they have listing duration by days. 
++ According to the paper “Invest in Information or Wing It? A Model of Dynamic Pricing with Seller Learning” https://www.hbs.edu/faculty/Publication%20Files/16-027_1e5317c9-b364-4b55-a90d-fd32fbee167b.pdf, the distribution of the initial prices and the total price changes due to the adjustments of the seller’s belief is a very important feature. If I had scraped Carmax.com instead Cars.com, i would have obtained this kind of information, because they have listing duration by days. 
 + Finish my recommendation engine. 
 
